@@ -1,0 +1,44 @@
+baseurl: ''
+languageCode: en-us
+title: John Doherty
+googleAnalytics: ""
+disqusShortname: ""
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+disableHugoGeneratorInject: true
+pluralizeListTitles: false
+pygmentsCodeFences: false
+pygmentsUseClasses: false
+enableRobotsTXT: false
+minify: true
+paginate: 9999
+disableKinds:
+  - categories
+  - tags
+taxonomies:
+  tag: tags
+
+permalinks:
+  writing: /:year/:month/:day/:slug/
+
+params:
+  description: ""
+  subtitle: ""
+
+frontmatter:
+  author: 
+  github: 
+  facebook: 
+  og_image: 
+  sitename: 
+  twitter: 
+
+sitemap:
+  changefreq: daily
+  filename: sitemap.xml
+  priority: 0.9
+
+outputFormats:
+  RSS:
+    mediatype: application/rss
+    baseName: atom

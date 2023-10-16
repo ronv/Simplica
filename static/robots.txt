@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /tags/
+Disallow: /categories/
+Sitemap: https://ronaldsvilcins.com/sitemap.xml

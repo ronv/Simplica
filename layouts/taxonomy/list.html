@@ -1,0 +1,18 @@
+{{/* layouts/taxonomy/list.html */}}
+
+{{ partial "header.html" . }}
+
+
+  <h2>All posts tagged "{{ .Title | lower }}"</h2>
+  <ul class="list">
+    {{ range .Pages }}
+      <li>
+        <time>{{ .Date.Format (.Site.Params.dateFormat | default "2006-01-02" ) }}</time>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+          
+      </li>
+    {{ end }}
+  </ul>
+
+
+{{ partial "footer.html" . }}
